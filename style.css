@@ -1,7 +1,64 @@
 /*
-Color Palette:
-background color:  
-font color:        
-secondary color:   
-tertiary color:    
+Color Palette: #6E5773
+background color: #D45079
+font color: #E9E1CC      
+secondary color: #EA9085
+tertiary color: #D45D79    
 */
+/* font-family: 'Alkalami', serif;
+font-family: 'Open Sans', sans-serif;/*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+header {
+    background-color: #6E5773;
+    margin: 0 4em;
+    padding: 0.5rem;
+    border: 1px solid #FFFFFF;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+body {
+    margin: 0;
+    background-color: #EA9085;
+    color: #D45D79;
+    border-style: dashed;
+    border: 10px lightgrey;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+.title {
+    background-color: #6E5773;
+    font-family: 'Alkalami', serif;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    margin: 15px;
+    padding: 10px;
+}
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 7rem 4rem;
+    align-items: center;
+}
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cardText  {
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 30px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
