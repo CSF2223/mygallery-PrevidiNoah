@@ -16,15 +16,19 @@ html {
 .milk {
   width: 75px;
   height: 100px;
-  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; 
   animation: mymove 5s infinite;
+  animation-delay: 2s;
 }
 
 @keyframes mymove {
-  0%   {left:0px; top:0px;}
-  25%  {left:350px; top:0px;}
-  50%  {left:350px; top:0px;}
-  100% {left:0px; top:0px;}
+  0%   {left:0px;}
+  25%  {left:150px;}
+  50%  {left:-150px;}
+  100% {left:0px;}
 }
 header {
     background-image: linear-gradient(Black, Grey);
@@ -33,7 +37,7 @@ header {
     border: 1px solid #FFFFFF;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
     text-transform: uppercase;
-    border-radius: 30px;
+    border-radius: 5px;
     border-style: hidden;
 }
 body {
@@ -91,6 +95,7 @@ cite {
 p {
     font-size: 1.2rem;
 }
+
 @media (min-width: 768px) {
     header {
         font-size: 1.6rem;
@@ -105,4 +110,7 @@ p {
     .image {
         max-width: 300px;
     }
+}
+img:hover{
+    transform: scale(1.1);
 }
